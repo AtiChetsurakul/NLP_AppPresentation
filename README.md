@@ -39,10 +39,11 @@
 - ## Project2 Tweet to review product
 - ### I have 2 excute
 <img src = 'how_my_web_perform/excute0.png'>
+
 - ### second one
 <img src = 'how_my_web_perform/excute1.png'>
 
-
+- ## Maybe we should sent email to `Elon Musk` to sell `twitter` out or just let it went bankrupt. Since he do something in TWITTER API and that will not be free anymore T-T . 
 
 -----------------------
 
