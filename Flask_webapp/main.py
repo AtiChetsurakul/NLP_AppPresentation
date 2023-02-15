@@ -53,11 +53,11 @@ def upload():
         ))
         return redirect(url_for('result_table', file_name=filename, page=page))
 
-    return render_template('upload.html', form=form)
+    return render_template('upload.html', form=form, head='HomeWork NO. 3 Resume stealer')
 
 
 @app.route('/checker', methods=['GET', 'POST'])
-def cheker():
+def checker():
     form = checkerForm()
     if form.validate_on_submit():
         f = form.textS.data
@@ -70,11 +70,12 @@ def cheker():
         subreddit = reddit.subreddit(f)
         topics = [*subreddit.top(limit=n)]
         fifty_sen = [n.title for n in topics]
-        print(test := pycache_loader_.inference_classification(fifty_sen, False))
-        test2 = float(sum(test)/len(test))
-        return test2
+        test = pycache_loader_.inference_classification(fifty_sen, True)
+        # test2 = str(sum(test)/len(test))
+        score = list([(s, int(i)) for s, i in test])
+        return render_template('stealed2.html', score=score)
 
-    return render_template('upload.html', form=form)
+    return render_template('upload.html', form=form, head='Hw4 : Dunno the topic')
 
 
 @app.route('/stealing/<file_name>/<int:page>')

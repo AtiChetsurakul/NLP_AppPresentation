@@ -43,7 +43,17 @@
 - ### second one
 <img src = 'how_my_web_perform/excute1.png'>
 
-- ## Maybe we should sent email to `Elon Musk` to sell `twitter` out or just let it went bankrupt. Since he do something in TWITTER API and that will not be free anymore T-T . 
+- ## Maybe we should sent email to `Elon Musk` to sell `twitter` out or just let it went bankrupt. Since he do something in TWITTER API and that will not be free anymore T-T .
+
+- ## Anyway, we still have our freind REDDIT
+### So our site now is like
+<img src = 'how_my_web_perform/hw4twmp.png'>
+
+- ### Our form for this hw
+<img src = 'how_my_web_perform/hw4form.png'>
+- ### and this is result
+<<img src = 'how_my_web_perform/hw4result.png'>>
+
 
 -----------------------
 

@@ -19,5 +19,5 @@ if __name__ == '__main__':
     # print(len(topics))
     fifty_sen = [n.title for n in topics]
     print(test := pycache_loader_.inference_classification(fifty_sen, False))
-    test2 = float(sum(test)/len(test))
-    print(test2)
+
+    print(list([int(i) for i in test]))
