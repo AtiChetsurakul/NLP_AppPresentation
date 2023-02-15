@@ -6,3 +6,14 @@
 *.conll
 !.csv
 *.weights
+
+*.pt
+*.atikeep
+*.pth
+*.txt
+!requirements.txt
+*.conll
+!.csv
+*.weights
+*.vec
+secKey.py
