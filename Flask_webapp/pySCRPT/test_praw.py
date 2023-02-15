@@ -1,5 +1,6 @@
 import praw
 from secKey import ret_id
+import pycache_loader_
 
 
 if __name__ == '__main__':
@@ -14,6 +15,9 @@ if __name__ == '__main__':
     print(reddit.read_only)  # Output: True
 
     subreddit = reddit.subreddit('apple')
-    topics = [*subreddit.top(limit=50)]  # top posts all time
+    topics = [*subreddit.top(limit=10)]  # top posts all time
     # print(len(topics))
-    fifty_sen = title = [n.title for n in topics]
+    fifty_sen = [n.title for n in topics]
+    print(test := pycache_loader_.inference_classification(fifty_sen, False))
+    test2 = float(sum(test)/len(test))
+    print(test2)

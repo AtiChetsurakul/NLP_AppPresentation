@@ -12,6 +12,7 @@ import os
 from functools import wraps
 import pyperclip3 as pyclip
 import datetime as dt
+import praw
 
 
 PASSWORD_STR = os.environ.get('adminpassw', 'pw')
@@ -51,6 +52,27 @@ def upload():
             app.instance_path, filename
         ))
         return redirect(url_for('result_table', file_name=filename, page=page))
+
+    return render_template('upload.html', form=form)
+
+
+@app.route('/checker', methods=['GET', 'POST'])
+def cheker():
+    form = checkerForm()
+    if form.validate_on_submit():
+        f = form.textS.data
+        n = int(form.numm.data)
+        from pySCRPT import secKey
+        from pySCRPT import pycache_loader_
+        client, secret, _ = secKey.ret_id()
+        reddit = praw.Reddit(
+            client_id=client, client_secret=secret, user_agent='ati')
+        subreddit = reddit.subreddit(f)
+        topics = [*subreddit.top(limit=n)]
+        fifty_sen = [n.title for n in topics]
+        print(test := pycache_loader_.inference_classification(fifty_sen, False))
+        test2 = float(sum(test)/len(test))
+        return test2
 
     return render_template('upload.html', form=form)
 

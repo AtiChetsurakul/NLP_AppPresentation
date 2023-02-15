@@ -32,3 +32,10 @@ class PdfForm(FlaskForm):
     page = SelectField('Page', choices=[(
         1, '1'), (2, '2'), (3, '3'), (5, '5'), (0, '0, for more subscrib for a premium to access all page stealing')])
     submit = SubmitField("Submit file")
+
+
+class checkerForm(FlaskForm):
+    textS = StringField('to_search', validators=[DataRequired()])
+    numm = SelectField('Page', choices=[(30, '30'), (50, '50'), (
+        3, '3, for more subscrib for a premium to access all page stealing')])
+    submit = SubmitField(label='send')
