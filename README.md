@@ -47,7 +47,8 @@
 
 - ## Anyway, we still have our freind REDDIT
 ### So our site now is like
-<img src = 'how_my_web_perform/hw4twmp.png'>
+
+<img src = 'how_my_web_perform/hwtwmp.png'>
 
 - ### Our form for this hw
 <img src = 'how_my_web_perform/hw4form.png'>
