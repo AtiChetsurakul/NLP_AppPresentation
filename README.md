@@ -62,17 +62,13 @@
 ## code Struceture for my flask web app
 ```bash
 .
-├── data_stealer.py
+├── data_stealer.py                         #PROJECT 1
 ├── form_.py
 ├── instance
 │   ├── create_dir.py
 │   └── requirements.txt
 ├── main.py
-├── pySCRPT
-│   ├── __pycache__
-│   │   ├── modude_.cpython-310.pyc
-│   │   ├── pycache_loader_.cpython-310.pyc
-│   │   └── secKey.cpython-310.pyc
+├── pySCRPT                                 # PROJECT 2
 │   ├── modude_.py
 │   ├── pycache_loader_.py
 │   ├── runner.py
