@@ -1,4 +1,10 @@
+- ## Project Here
+    - Resume Praser
+    - Product Review analysis
+
+
 ## To use
+
 
 ### You need to find different template.
 - ####  Atleast visit `HTML5UP` website
@@ -16,7 +22,7 @@
 ## If you dont want to use a doc
 
 - First, `pip install -r requirement.txt`
-- then on bash -> $ `export FLASK_APP = main`
+- then on bash -> $ `export FLASK_APP=main`
 - then $`flask run`
 ### But u still need to download your own template
 -------------------
@@ -63,14 +69,21 @@
 ## code Struceture for my flask web app
 ```bash
 .
-├── __pycache__
-│   ├── data_stealer.cpython-39.pyc
-│   ├── form_.cpython-39.pyc
-│   └── main.cpython-39.pyc
 ├── data_stealer.py
 ├── form_.py
 ├── instance
+│   ├── create_dir.py
+│   └── requirements.txt
 ├── main.py
+├── pySCRPT
+│   ├── __pycache__
+│   │   ├── modude_.cpython-310.pyc
+│   │   ├── pycache_loader_.cpython-310.pyc
+│   │   └── secKey.cpython-310.pyc
+│   ├── modude_.py
+│   ├── pycache_loader_.py
+│   ├── runner.py
+│   └── test_praw.py
 ├── static
 │   ├── assets
 │   │   ├── css
@@ -145,6 +158,11 @@
 │   │   ├── francis.png
 │   │   ├── francis2.png
 │   │   ├── gallery
+│   │   │   ├── fulls
+│   │   │   │   ├── 01.jpg
+│   │   │   │   ├── 02.jpg
+...
+│   │   │       └── 12.jpg
 │   │   ├── pic01.jpg
 │   │   ├── pic02.jpg
 │   │   ├── pic03.jpg
@@ -159,5 +177,7 @@
     ├── index.html
     ├── index_.html
     ├── stealed.html
+    ├── stealed2.html
     └── upload.html
+
 ```
