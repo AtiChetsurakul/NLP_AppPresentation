@@ -68,7 +68,52 @@
 <img src= 'how_my_web_perform/dick1.png'>
 <img src= 'how_my_web_perform/dick2.png'>
 
+- with this doc
 
+``` html
+<form action="/evalg" method="post">
+    {% if generate %}
+    <textarea type="text" name='old' style="border:none; outline:none;" id="input-field2"
+        oninput="resizeTextarea()">{{generate}}</textarea>
+    {% endif %}
+    <input type="text" name='dick' style="border:none; outline:none;" id="input-field" />
+    <button type="submit">Submit</button>
+</form>
+<script>
+
+    function generateRandomString(length) {
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
+    const inputField = document.getElementById("input-field");
+    inputField.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            const inputValue = inputField.value;
+            const randomString = generateRandomString(5); // Change the length as per your requirement
+            inputField.value = `${inputValue} ${randomString}`;
+        }
+    });
+
+    function resizeTextarea() {
+        const textarea = document.getElementById("input-field2");
+        textarea.style.height = "1px";
+        textarea.style.height = (25 + textarea.scrollHeight) + "px";
+    }
+
+</script>
+<style>
+    #input-field2 {
+        resize: none;
+        height: 500px;
+        overflow-y: scroll;
+    }
+</style>
+```
 
 - An Editable n stackable result are show as this  
 
