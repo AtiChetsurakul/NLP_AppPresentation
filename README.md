@@ -84,16 +84,32 @@
 ## code Struceture for my flask web app
 ```bash
 .
-├── data_stealer.py                         #PROJECT 1
+├── data_stealer.py                     # Project 1
+├── dicKKUtill.py                       # Project 3 code prediction loader
 ├── form_.py
 ├── instance
 │   ├── create_dir.py
 │   └── requirements.txt
 ├── main.py
-├── pySCRPT                                 # PROJECT 2
+├── predickapp                          # PROJECT 3 code prediction 
+│   ├── dickUtil.py
+│   ├── dicpackage.atikeep
+│   ├── predickModule.py
+│   ├── predickPyt.py
+│   ├── predictor_weight.pt
+│   ├── runner.py
+│   ├── vocab.pickle
+│   └── vocab.txt
+├── pySCRPT                             # PROJECT 2
+│   ├── LSTM.pt
 │   ├── modude_.py
+│   ├── __pycache__
+│   │   ├── modude_.cpython-310.pyc
+│   │   ├── pycache_loader_.cpython-310.pyc
+│   │   └── secKey.cpython-310.pyc
 │   ├── pycache_loader_.py
 │   ├── runner.py
+│   ├── secKey.py
 │   └── test_praw.py
 ├── static
 │   ├── assets
@@ -103,7 +119,11 @@
 │   │   │   └── noscript.css
 │   │   ├── js
 │   │   │   ├── breakpoints.min.js
-...
+│   │   │   ├── browser.min.js
+│   │   │   ├── demo.js
+│   │   │   ├── jquery.min.js
+│   │   │   ├── jquery.scrollex.min.js
+│   │   │   ├── jquery.scrolly.min.js
 │   │   │   ├── main.js
 │   │   │   └── util.js
 │   │   ├── sass
@@ -130,33 +150,43 @@
 │   │   └── webfonts
 │   │       ├── fa-brands-400.eot
 ...
-│   │       ├── fa-solid-900.woff
 │   │       └── fa-solid-900.woff2
 │   ├── edu_skill.jsonl
 │   ├── files
 │   │   └── joke.csv
 │   ├── images
 │   │   ├── banner.jpg
-...
+│   │   ├── francis2.png
+│   │   ├── francis.png
+│   │   ├── franc.webp
 │   │   ├── gallery
 │   │   │   ├── fulls
 │   │   │   │   ├── 01.jpg
-│   │   │   │   ├── 02.jpg
-...
+│   │   │   └── thumbs
+│   │   │       ├── 01.jpg
 │   │   │       └── 12.jpg
 │   │   ├── pic01.jpg
 │   │   ├── pic02.jpg
-...
+│   │   ├── pic03.jpg
+│   │   ├── sca.png
+│   │   ├── spotlight01.jpg
+│   │   ├── spotlight02.jpg
 │   │   └── spotlight03.jpg
 │   └── skills.jsonl
 └── templates
     ├── footer.html
     ├── header.html
+    ├── heavyidx.html
     ├── index.html
     ├── index_.html
-    ├── stealed.html
     ├── stealed2.html
+    ├── stealed.html
+    ├── __temp_heavyidx.html
     └── upload.html
+
+21 directories, 133 files
+
+
 
 ```
 
