@@ -39,9 +39,23 @@ def hello():
     return render_template('index.html')
 
 
-@app.route('/evalg')
+@app.route('/evalg', methods=['GET', 'POST'])
 def evalg():
-    return render_template('heavyidx.html')
+
+    import dicKKUtill
+    if request.method == 'POST':
+        old = request.form.get('old')
+        dick = request.form.get('dick')
+        print(dick)
+        generated = dicKKUtill.generate(dick, 30, .8, dicKKUtill.model, dicKKUtill.tokenizer,
+                                        dicKKUtill.vocab, dicKKUtill.device, 3407)
+        if old is not None:
+            return render_template('heavyidx.html', generate=old+'\n'+' '.join(generated))
+        else:
+            return render_template('heavyidx.html', generate=' '.join(generated))
+    else:
+        # return render_template('form.html')
+        return render_template('heavyidx.html')
 
 
 @app.route('/upload', methods=['GET', 'POST'])

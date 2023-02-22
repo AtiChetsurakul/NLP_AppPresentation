@@ -52,10 +52,31 @@
 - ### Our form for this hw
 <img src = 'how_my_web_perform/hw4form.png'>
 - ### and this is result
-<<img src = 'how_my_web_perform/hw4result.png'>>
+<img src = 'how_my_web_perform/hw4result.png'>
 
 
 -----------------------
+
+- ## Project 3 
+- Our site are now add new feature
+
+<img src= 'how_my_web_perform/dick0.png'>
+
+- How it work?
+
+<img src= 'how_my_web_perform/dick1.png'>
+<img src= 'how_my_web_perform/dick2.png'>
+
+
+
+- An Editable n stackable result are show as this  
+
+<img src= 'how_my_web_perform/dick3.png'>
+<img src= 'how_my_web_perform/dick4.png'>
+<img src= 'how_my_web_perform/dick5.png'>
+
+
+------------------------------
 
 
 

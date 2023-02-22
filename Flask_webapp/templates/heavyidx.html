@@ -6,7 +6,21 @@
 
 
 <!-- <input type="text" style="border:none; outline:none;"> -->
-<input type="text" style="border:none; outline:none;" id="input-field" />
+
+
+
+
+<form action="/evalg" method="post">
+    {% if generate %}
+    <textarea type="text" name='old' style="border:none; outline:none;" id="input-field2"
+        oninput="resizeTextarea()">{{generate}}</textarea>
+    {% endif %}
+    <input type="text" name='dick' style="border:none; outline:none;" id="input-field" />
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- <input type="text" style="border:none; outline:none;" id="input-field" /> -->
 <script>
 
     function generateRandomString(length) {
@@ -30,10 +44,21 @@
         }
     });
 
+    function resizeTextarea() {
+        const textarea = document.getElementById("input-field2");
+        textarea.style.height = "1px";
+        textarea.style.height = (25 + textarea.scrollHeight) + "px";
+    }
 
 </script>
 
-
+<style>
+    #input-field2 {
+        resize: none;
+        height: 500px;
+        overflow-y: scroll;
+    }
+</style>
 
 {% include "footer.html" %}
 {%endblock %}
