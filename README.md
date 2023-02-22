@@ -6,12 +6,12 @@
 ## To use
 
 
-#### you can find tutorial on how to run flask app on `flask Doc`.
+<!-- #### you can find tutorial on how to run flask app on `flask Doc`.
 
 
 #### I use chatGPT to generate a jsonl pipeline for education title extracting and partial copied from Tonson
 <img src = 'how_my_web_perform/chatgpt.png'>
-
+ -->
 
 ----------------
 
