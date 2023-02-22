@@ -26,7 +26,7 @@
 -------------------------
 - ## Project1 Resume Stealer
 - ### UploadPage
-<img src = 'how_my_web_perform/uploadpage2.png'>
+<!-- <img src = 'how_my_web_perform/uploadpage2.png'> -->
 
 - ### File uploading
 <img src = 'how_my_web_perform/uploadafile.png'>
@@ -50,7 +50,7 @@
 <img src = 'how_my_web_perform/hwtwmp.png'>
 
 - ### Our form for this hw
-<img src = 'how_my_web_perform/hw4form.png'>
+<!-- <img src = 'how_my_web_perform/hw4form.png'> -->
 - ### and this is result
 <img src = 'how_my_web_perform/hw4result.png'>
 
