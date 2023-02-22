@@ -39,6 +39,11 @@ def hello():
     return render_template('index.html')
 
 
+@app.route('/evalg')
+def evalg():
+    return render_template('heavyidx.html')
+
+
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     # form = PdfForm(meta={'csrf': False})

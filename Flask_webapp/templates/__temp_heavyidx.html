@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+
+<!-- <input type="text" style="border:none; outline:none;"> -->
+<input type="text" style="border:none; outline:none;" id="input-field" />
+<script>
+
+    function generateRandomString(length) {
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
+
+
+
+    const inputField = document.getElementById("input-field");
+    inputField.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            const inputValue = inputField.value;
+            const randomString = generateRandomString(5); // Change the length as per your requirement
+            inputField.value = `${inputValue} ${randomString}`;
+        }
+    });
+
+
+</script>
+
+
+
+{% include "footer.html" %}
+{%endblock %}
