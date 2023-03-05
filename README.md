@@ -1,14 +1,12 @@
 - ## Project Here
-    - Resume Praser
-    - Product Review analysis
-    - Auto coding in python
 
+  - Resume Praser
+  - Product Review analysis
+  - Auto coding in python
 
 ## To use
 
-
 <!-- #### you can find tutorial on how to run flask app on `flask Doc`.
-
 
 #### I use chatGPT to generate a jsonl pipeline for education title extracting and partial copied from Tonson
 <img src = 'how_my_web_perform/chatgpt.png'>
@@ -19,23 +17,32 @@
 - First, `pip install -r requirement.txt`
 - then on bash -> $ `export FLASK_APP=main`
 - then $`flask run`
+
 -------------------
+
 ## how it work
+
 - ### Homepage
+
  <img src = 'how_my_web_perform/homepage.png'>
 
 -------------------------
+
 - ## Project1 Resume Stealer
+
 - ### UploadPage
 <!-- <img src = 'how_my_web_perform/uploadpage2.png'> -->
 
 - ### File uploading
+
 <img src = 'how_my_web_perform/uploadafile.png'>
 
 - ### Result
+
 <img src = 'how_my_web_perform/result.png'>
 
 ---------------
+
 - ## Project2 Tweet to review product
 <!-- - ### I have 2 excute
 <img src = 'how_my_web_perform/excute0.png'>
@@ -53,12 +60,13 @@
 - ### Our form for this hw
 <!-- <img src = 'how_my_web_perform/hw4form.png'> -->
 - ### and this is result
-<img src = 'how_my_web_perform/hw4result.png'>
 
+<img src = 'how_my_web_perform/hw4result.png'>
 
 -----------------------
 
-- ## Project 3 
+- ## Project 3
+
 - Our site are now add new feature
 
 <img src= 'how_my_web_perform/dick0.png'>
@@ -70,7 +78,7 @@
 
 - with this doc
 
-``` html
+<!-- ``` html
 <form action="/evalg" method="post">
     {% if generate %}
     <textarea type="text" name='old' style="border:none; outline:none;" id="input-field2"
@@ -113,7 +121,7 @@
         overflow-y: scroll;
     }
 </style>
-```
+``` -->
 
 - An Editable n stackable result are show as this  
 
@@ -121,12 +129,17 @@
 <img src= 'how_my_web_perform/dick4.png'>
 <img src= 'how_my_web_perform/dick5.png'>
 
-
 ------------------------------
 
+## Translator Project
 
+- TH -> ENG translator
+
+<img src= 'how_my_web_perform/MT1.png'>
+<img src= 'how_my_web_perform/MT2.png'
 
 ## code Struceture for my flask web app
+
 ```bash
 .
 ├── data_stealer.py                     # Project 1
@@ -235,8 +248,8 @@
 
 ```
 
-
 -----------------------
+
 ## System
 
 ```bash
@@ -281,4 +294,3 @@ Thu Feb 16 06:27:08 2023
 
 
 ```
-
