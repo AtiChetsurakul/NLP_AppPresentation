@@ -43,19 +43,20 @@ def hello():
 def evalm():
 
     from ati_trans import inferencecer_MT
+    from ati_trans import tranF_module
     if request.method == 'POST':
         old = request.form.get('old')
         dick = request.form.get('dick')
         # print(dick)
-        generated = inferencecer_MT.translation((dick, 'general',
-                                                 '/Users/atichetsurakul/Desktop/JAN23/nlp123clone/NLP_labsession/Hw6_MLtranslate/models/Seq2SeqPackedAttention_general.pt', inferencecer_MT.device))
+        generated = inferencecer_MT.translation(
+            dick, 'general', '/Users/atichetsurakul/Desktop/JAN23/nlp123clone/NLP_labsession/Hw6_MLtranslate/models/Seq2SeqPackedAttention_general.pt', inferencecer_MT.device)
         if old is not None:
-            return render_template('heavyidx.html', generate=old+'\n'+' '.join(generated))
+            return render_template('heavyidxMT.html', generate=old+'\n'+dick + '='+' '.join(generated))
         else:
-            return render_template('heavyidx.html', generate=' '.join(generated))
+            return render_template('heavyidxMT.html', generate=dick + '='+' '.join(generated))
     else:
         # return render_template('form.html')
-        return render_template('heavyidx.html')
+        return render_template('heavyidxMT.html')
 
 
 @app.route('/evalg', methods=['GET', 'POST'])

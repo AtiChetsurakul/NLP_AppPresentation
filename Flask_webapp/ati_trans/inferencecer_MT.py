@@ -1,6 +1,9 @@
 import torch
 import pickle
-from tranF_module import *
+if __name__ == '__main__':
+    from tranF_module import *
+else:
+    from ati_trans.tranF_module import *
 from attacut import tokenize, Tokenizer
 from torchtext.data.utils import get_tokenizer
 
