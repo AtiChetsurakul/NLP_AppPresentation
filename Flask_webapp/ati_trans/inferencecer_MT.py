@@ -19,7 +19,7 @@ UNK_IDX, PAD_IDX, SOS_IDX, EOS_IDX = 0, 1, 2, 3
 special_symbols = ['<unk>', '<pad>', '<sos>', '<eos>']
 
 
-with open('vocab_transform.atikeep', 'rb') as handle:
+with open('/Users/atichetsurakul/Desktop/JAN23/nlp123clone/NLP_AppPresentation/Flask_webapp/ati_trans/vocab_transform.atikeep', 'rb') as handle:
     vocab_transform = pickle.load(handle)
 print(vocab_transform)
 
