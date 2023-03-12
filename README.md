@@ -136,7 +136,7 @@
 - TH -> ENG translator
 
 <img src= 'how_my_web_perform/MT1.png'>
-<img src= 'how_my_web_perform/MT2.png'
+<img src= 'how_my_web_perform/MT2.png'>
 
 ## code Struceture for my flask web app
 
