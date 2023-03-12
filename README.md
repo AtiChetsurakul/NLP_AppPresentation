@@ -3,6 +3,7 @@
   - Resume Praser
   - Product Review analysis
   - Auto coding in python
+  - ML- Translator
 
 ## To use
 
@@ -21,6 +22,11 @@
 -------------------
 
 ## how it work
+
+- CODE Auto Complete with `Transformer and Beamsearh`
+<img src= 'how_my_web_perform/decep0.png'>
+<img src= 'how_my_web_perform/decep1.png'>
+<img src= 'how_my_web_perform/decep2.png'>
 
 - I move the code to [another README for EASY search](TEMP_README.md)
 
