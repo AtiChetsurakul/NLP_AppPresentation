@@ -28,6 +28,8 @@
 <img src= 'how_my_web_perform/decep1.png'>
 <img src= 'how_my_web_perform/decep2.png'>
 
+- ### btw, Beamsearch is broke
+
 - I move the code to [another README for EASY search](TEMP_README.md)
 
 ## code Struceture for my flask web app
