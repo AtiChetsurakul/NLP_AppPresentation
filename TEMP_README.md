@@ -122,3 +122,10 @@
 
 <img src= 'how_my_web_perform/MT1.png'>
 <img src= 'how_my_web_perform/MT2.png'>
+
+
+-------------------------------
+- CODE Auto Complete with `Transformer and Beamsearh`
+<img src= 'how_my_web_perform/decep0.png'>
+<img src= 'how_my_web_perform/decep1.png'>
+<img src= 'how_my_web_perform/decep2.png'>

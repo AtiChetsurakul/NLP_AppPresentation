@@ -13,7 +13,8 @@ from functools import wraps
 import pyperclip3 as pyclip
 import datetime as dt
 import praw
-
+from transformers import pipeline
+from transformers import Conversation
 
 PASSWORD_STR = os.environ.get('adminpassw', 'pw')
 
@@ -57,6 +58,29 @@ def evalm():
     else:
         # return render_template('form.html')
         return render_template('heavyidxMT.html')
+
+
+@app.route('/evalcommu', methods=['GET', 'POST'])
+def evalcommu():
+    generator = pipeline(
+        "conversational", model="srv/DialoGPT-medium-Breaking_Bad", max_length=30, pad_token_id=0)
+    # import dicKKUtill
+    if request.method == 'POST':
+        old = request.form.get('old')
+        dick = request.form.get('dick')
+        print(dick)
+
+        # Conversation("Say my name!")
+        # generator(Conversation(dick))
+        # generated = dicKKUtill.generate(dick, 30, .8, dicKKUtill.model, dicKKUtill.tokenizer,
+        #                                 dicKKUtill.vocab, dicKKUtill.device, 3407)
+        if old is not None:
+            return render_template('heavyidxcommu.html', generate=old+'\n'+generator(Conversation(dick)))
+        else:
+            return render_template('heavyidxcommu.html', generate=generator(Conversation(dick)))
+    else:
+        # return render_template('form.html')
+        return render_template('heavyidxcommu.html')
 
 
 @app.route('/evalg', methods=['GET', 'POST'])

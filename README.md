@@ -23,10 +23,10 @@
 
 ## how it work
 
-- CODE Auto Complete with `Transformer and Beamsearh`
-<img src= 'how_my_web_perform/decep0.png'>
-<img src= 'how_my_web_perform/decep1.png'>
-<img src= 'how_my_web_perform/decep2.png'>
+- Last HW playing with hugging face
+<img src = 'how_my_web_perform/newIDXX.png'>
+<img src = 'how_my_web_perform/huggingFaceCommu.png'>
+
 
 - ### btw, Beamsearch is broke
 
